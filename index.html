@@ -29,9 +29,9 @@
 							<img src="img/logo_integrity.svg" alt="logo">
 						</div>
 						<div class="headerCard_lang">
-							<a href="#"><p>RU</p></a>
-							<a href="#"><p>EN</p></a>
-							<a href="#"><p>DE</p></a>
+							<a href="{{ LaravelLocalization::getLocalizedURL('ru') }}"><p>RU</p></a>
+							<a href="{{ LaravelLocalization::getLocalizedURL('en') }}"><p>EN</p></a>
+							<a href="{{ LaravelLocalization::getLocalizedURL('de') }}"><p>DE</p></a>
 						</div>
 					</div>
 
@@ -134,7 +134,7 @@
 							</div>
 						</div>
 
-						<div class="investors_block investors_cards">
+						<div class="investors_block investors_cards investors_block-mobile">
 							<div class="investorsCards_block">
 								<div class="investorsCards_block-flex">
 									<div class="investorsCardsBlock_desc investors_desc">
@@ -151,7 +151,7 @@
 							</div>
 						</div>
 
-						<div class="investors_block investors_cards">
+						<div class="investors_block investors_cards investors_block-mobile">
 							<div class="investorsCards_block">
 								<div class="investorsCards_block-flex">
 									<div class="investorsCardsBlock_desc investors_desc">
@@ -204,7 +204,7 @@
 					</div>
 
 					<div class="investors_block-show">
-						<p>Показать больше</p>
+						<p attr-data="Скрыть">Показать больше</p>
 						<img src="img/chevron_down.svg" alt="chevron">
 					</div>
 				</div>
@@ -243,26 +243,14 @@
 
 						<div class="investment_block">
 							<div class="investmentCardsBlock_content" attr-data="block_one">
-								<p>Инвестиционная таблица</p>
-								<img src="img/strelka-blue.svg" alt="arrow">
+								<h4>Инвестиционный калькулятор</h4>
+								<img attr-data="img/strelka-white.svg" src="img/strelka-blue.svg" alt="arrow">
 							</div>
 						</div>
 						<div class="investment_block">
 							<div class="investmentCardsBlock_content" attr-data="block_two">
-								<p>Прогнозируемая прибыль</p>
-								<img src="img/strelka-blue.svg" alt="arrow">
-							</div>
-						</div>
-						<div class="investment_block">
-							<div class="investmentCardsBlock_content" attr-data="block_three">
-								<p>Распределение инвестиций</p>
-								<img src="img/strelka-blue.svg" alt="arrow">
-							</div>
-						</div>
-						<div class="investment_block">
-							<div class="investmentCardsBlock_content" attr-data="block_four">
-								<p>Оценка продукта</p>
-								<img src="img/strelka-blue.svg" alt="arrow">
+								<h4>Распределение инвестиций</h4>
+								<img attr-data="img/strelka-white.svg" src="img/strelka-blue.svg" alt="arrow">
 							</div>
 						</div>
 					</div>
@@ -284,54 +272,53 @@
 										<img src="img/icon-1.svg" alt="icon">
 										<div class="blockSlide_int">
 											<span>Сумма инвестиции</span>
-											<output name="ageOutputName" id="ageOutputId" class="output_text">20000</output>
+											<output id="ageOutputId">20000</output>
 										</div>
 						 				<div class="trackBar">
-						 				    <input type="range" name="ageInputName" id="ageInputId" value="20000" min="20000" max="200000" step="10000" >
+						 				    <input type="range" id="ageInputId" value="20000" min="20000" max="200000" step="10000" >
 						 				</div>
 									</div>
-									
 								</div>
+
 								<div class="blockSlide_inner">
 									<div class="row m-0 blockSlideInner_output">
 										<img src="img/icon-2.svg" alt="icon">
 										<div class="blockSlide_int">
 											<span>Этап развития</span>
-											<output name="ageOutputName" id="ageOutputId2" class="output_text">0</output>
+											<output id="ageOutputId2">0</output>
 										</div>
 						 				<div class="trackBar">
-						 				    <input type="range" name="ageInputName" id="ageInputId2" value="0" min="0" max="8" step="1" >
+						 				    <input type="range" id="ageInputId2" value="0" min="0" max="8" step="1" >
 						 				</div>
 									</div>
-									
 								</div>
 							</div>
 
 							<div class="col-md-7 col-12 investmentBlockSlide_right">
 								<div class="blockSlide_inner blockSlide_profit">
-									<div class="row m-0 blockSlideInner_output blockSlideInner_output-small">
+									<div class="row m-0 blockSlideInner_output">
 										<img src="img/icon-1-small.svg" alt="icon">
 										<div class="blockSlide_int blockSlide_int-small">
 											<span>Прибыль, %</span>
-											<output id="ageOutputId3" class="output_text">0 %</output>
+											<output id="ageOutputId3">0 %</output>
 										</div>
 									</div>
 								</div>
 								<div class="blockSlide_inner blockSlide_profit">
-									<div class="row m-0 blockSlideInner_output blockSlideInner_output-small">
+									<div class="row m-0 blockSlideInner_output">
 										<img src="img/icon-2-small.svg" alt="icon">
 										<div class="blockSlide_int blockSlide_int-small">
 											<span>Чистая прибыль, &euro;</span>
-											<output id="ageOutputId4" class="output_text">0</output>
+											<output id="ageOutputId4">0</output>
 										</div>
 									</div>
 								</div>
 								<div class="blockSlide_inner blockSlide_profit">
-									<div class="row m-0 blockSlideInner_output blockSlideInner_output-small">
+									<div class="row m-0 blockSlideInner_output">
 										<img src="img/icon-3-small.svg" alt="icon">
 										<div class="blockSlide_int blockSlide_int-small">
 											<span>Колличество токенов</span>
-											<output id="ageOutputId5" class="output_text">8880.01</output>
+											<output id="ageOutputId5">8880.01</output>
 										</div>
 									</div>
 								</div>
@@ -371,44 +358,6 @@
 						</div>
 					</div>
 
-					<!-- Slide Three -->
-					<div class="container investmentBlock_slide block_three">
-						<div class="row">
-							<div class="blockSlide_close">
-								<img src="img/close.svg" alt="close">
-							</div>
-
-							<div class="col-12 slider_title">
-								<p>8 этапов развития проекта Integrity Place</p>
-							</div>
-
-							<div class="col-12 investmentBlockSlide_left">
-								<div class="blockSlide_inner">
-									<img src="img/table1.gif" alt="table">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Slide Four -->
-					<div class="container investmentBlock_slide block_four">
-						<div class="row">
-							<div class="blockSlide_close">
-								<img src="img/close.svg" alt="close">
-							</div>
-
-							<div class="col-12 slider_title">
-								<p>Инвестиционная таблица</p>
-							</div>
-
-							<div class="col-12 investmentBlockSlide_left">
-								<div class="blockSlide_inner">
-									<img src="img/table2.gif" alt="table">
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</div>
@@ -425,40 +374,52 @@
 					<div class="col-12 instruction_steps">
 
 						<div class="instructionSteps_block">
-							<p class="instruction_step"><img src="img/plus-size.svg" alt="icon">Создать крипто-кошелек</p>
+							<p class="instruction_step"><img src="img/plus-size.svg" attr-data="img/minus-size.svg" alt="icon">Создать крипто-кошелек</p>
 							<div class="instructionSteps_block-hide">
-								<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								<div class="instructionStepsBlock_content">
+									
+								</div>
 							</div>
 						</div>
 						<div class="instructionSteps_block">
 							<p class="instruction_step"><img src="img/plus-size.svg" alt="icon">Купить токены INTEGRITY</p>
 							<div class="instructionSteps_block-hide">
-								<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
 							</div>
 						</div>
 						
 						<div class="instructionSteps_block">
 							<p class="instruction_step"><img src="img/plus-size.svg" alt="icon">Получить токены INTEGRITY</p>
 							<div class="instructionSteps_block-hide">
-								<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
 							</div>
 						</div>
 						<div class="instructionSteps_block">
 							<p class="instruction_step instruction_step-showsub"><img src="img/plus-size.svg" alt="icon">Получить прибыль</p>
 							<div class="instructionSteps_block-hide">
-								<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
 							</div>
 						</div>
 						<div class="instructionSteps_subblock">
-							<p class="instruction_step"><img class="instruction_step-img" src="img/minus-size.svg" alt="icon"><b class="instruction_step-pos">Если сборы привысят максимум?</b></p>
-							<div class="instructionSteps_block-hide instructionSteps_block-hide-active active">
-								<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+							<p class="instruction_step"><img class="instruction_step-img" src="img/plus-size.svg" alt="icon"><b class="instruction_step-pos">Если сборы привысят максимум?</b></p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
 							</div>
 						</div>
 						<div class="instructionSteps_subblock">
-							<p class="instruction_step"><img class="instruction_step-img" src="img/minus-size.svg" alt="icon"><b class="instruction_step-pos">Если не соберется минимальная сумма?</b></p>
-							<div class="instructionSteps_block-hide instructionSteps_block-hide-active active">
-								<span>В противном случае, если просле завершения Pre-ICO не будет собрана минимальная сумма в размере 160 тысяч евро, инвестированная Вами сумма, в течении 5 рабочих дней поступит обратно к Вам на счет</span>
+							<p class="instruction_step"><img class="instruction_step-img" src="img/plus-size.svg" alt="icon"><b class="instruction_step-pos">Если не соберется минимальная сумма?</b></p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>В противном случае, если просле завершения Pre-ICO не будет собрана минимальная сумма в размере 160 тысяч евро, инвестированная Вами сумма, в течении 5 рабочих дней поступит обратно к Вам на счет</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -722,7 +683,7 @@
 									<p class="commandDesc_name">Михаил Шапкин</p>
 									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
 									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
-									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление 	активами.</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
 								</div>
 
 								<div class="commandCardsBlock_contact">
@@ -751,13 +712,13 @@
 
 					<div class="footer_logos">
 						<div class="footerLogo_one">
-							<a href="#"><img src="img/partner1.svg" alt="partner" attr-data="1"></a>
-							<a href="#"><img src="img/partner2.svg" alt="partner" attr-data="2"></a>
-							<a href="#"><img src="img/partner3.svg" alt="partner" attr-data="3"></a>
+							<a href="#"><img src="img/partner1.svg" attr-data="img/partner1_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner2.svg" attr-data="img/partner2_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner3.svg" attr-data="img/partner3_color.svg" alt="partner"></a>
 						</div>
 						<div class="footerLogo_two">
-							<a href="#"><img src="img/partner4.svg" alt="partner" attr-data="4"></a>
-							<a href="#"><img src="img/partner5.svg" alt="partner" attr-data="5"></a>
+							<a href="#"><img src="img/partner4.svg" attr-data="img/partner4_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner5.svg" attr-data="img/partner5_color.svg" alt="partner"></a>
 						</div>
 					</div>
 				</div>
