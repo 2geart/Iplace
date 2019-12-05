@@ -258,9 +258,20 @@
      						<circle cx="210" cy="190" r="4" stroke-linecap="round" fill="#fff" />
 
      						<circle cx="120" cy="120" r="75" stroke="#4d657a" stroke-width="2" fill="none" />
-							<circle id="round_animate" cx="120" cy="120" r="75" stroke="#6caeed" stroke-linecap="round" stroke-width="14" stroke-dasharray="110% 90%" stroke-dashoffset="50%" fill="none" />
+							<circle id="round_animate" cx="120" cy="120" r="75" stroke="#6caeed" stroke-linecap="round" stroke-width="14" stroke-dasharray="0% 200%" stroke-dashoffset="50%" fill="none"> 
+								
+								<animate 
+								id="round_animation"
+								attributeName="stroke-dasharray"
+								from="0% 200%"
+								to="0% 200%"
+								dur="4s"
+								begin="indefinite"
+								/>
 
-     						<text id="count_investment" font-size="56" font-family="Montserrat" font-weight="bold" text-anchor="middle" x="50%" y="125" stroke="none" fill="#6dd1da">160</text>
+							</circle>
+
+     						<text id="count_investment" font-size="56" font-family="Montserrat" font-weight="bold" text-anchor="middle" x="50%" y="125" stroke="none" fill="#6dd1da" final-amount="360" current-amount="160">0</text>
 							<text font-size="14" font-family="Montserrat" font-weight="bold" text-anchor="middle" x="50%" y="150" stroke="none" fill="#fff">ТЫС ЕВРО </text>
  						</svg>
 					</div>
