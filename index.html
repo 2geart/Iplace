@@ -33,9 +33,9 @@
 							<img src="img/logo_integrity.svg" alt="logo">
 						</div>
 						<div class="headerCard_lang">
-							<a href="{{ LaravelLocalization::getLocalizedURL('ru') }}"><p>RU</p></a>
-							<a href="{{ LaravelLocalization::getLocalizedURL('en') }}"><p>EN</p></a>
-							<a href="{{ LaravelLocalization::getLocalizedURL('de') }}"><p>DE</p></a>
+							<a href="#"><p class="lang-active">RU</p></a>
+							<a href="#"><p>EN</p></a>
+							<a href="#"><p>DE</p></a>
 						</div>
 					</div>
 
@@ -82,11 +82,11 @@
 				</div>
 
 				<div class="header_button desk_version">
-					<a href="#" download><p>Презентация</p><img src="img/pdf.svg" alt="pdf_file"></a>
+					<a href="test.txt" download><p>Презентация</p><img src="img/pdf.svg" alt="pdf_file"></a>
 				</div>
 
 				<div class="header_offer desk_version">
-					<a href="#" download><p>Презентационная офферта</p><img src="img/strelka.svg" alt="arrow"></a>
+					<a href="test.txt" download><p>Презентационная офферта</p><img src="img/strelka.svg" alt="arrow"></a>
 				</div>
 			</div>
 		</div>
@@ -111,7 +111,7 @@
 									<div class="investorsCardsBlock_desc investors_desc">
 										<p class="investorsDesc_name">Иван Иванов</p>
 										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
-										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <span class="investorsDesk_span-blue">23 000 &euro;</span></span>
 									</div>
 									<div class="investorsCardsBlock_avatar">
 										<img src="img/face.png" alt="investor">
@@ -133,7 +133,7 @@
 									<div class="investorsCardsBlock_desc investors_desc">
 										<p class="investorsDesc_name">Иван Иванов</p>
 										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
-										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <span class="investorsDesk_span-blue">23 000 &euro;</span></span>
 									</div>
 									<div class="investorsCardsBlock_avatar">
 										<img src="img/face1.png" alt="investor">
@@ -153,7 +153,7 @@
 									<div class="investorsCardsBlock_desc investors_desc">
 										<p class="investorsDesc_name">Иван Иванов</p>
 										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
-										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <span class="investorsDesk_span-blue">23 000 &euro;</span></span>
 									</div>
 
 									<div class="investorsCardsBlock_avatar">
@@ -174,7 +174,7 @@
 									<div class="investorsCardsBlock_desc investors_desc">
 										<p class="investorsDesc_name">Иван Иванов</p>
 										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
-										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <span class="investorsDesk_span-blue">23 000 &euro;</span></span>
 									</div>
 									<div class="investorsCardsBlock_avatar">
 										<img src="img/face1.png" alt="investor">
@@ -194,7 +194,7 @@
 									<div class="investorsCardsBlock_desc investors_desc">
 										<p class="investorsDesc_name">Иван Иванов</p>
 										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
-										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <span class="investorsDesk_span-blue">23 000 &euro;</span></span>
 									</div>
 									<div class="investorsCardsBlock_avatar">
 										<img src="img/face.png" alt="investor">
@@ -214,7 +214,7 @@
 									<div class="investorsCardsBlock_desc investors_desc">
 										<p class="investorsDesc_name">Иван Иванов</p>
 										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
-										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <span class="investorsDesk_span-blue">23 000 &euro;</span></span>
 									</div>
 									<div class="investorsCardsBlock_avatar">
 										<img src="img/face1.png" alt="investor">
@@ -230,7 +230,7 @@
 					</div>
 
 					<div class="investors_block-show">
-						<p attr-data="Скрыть">Показать больше</p>
+						<a href="Скрыть">Показать больше</a>
 						<img src="img/chevron_down.svg" alt="chevron">
 					</div>
 				</div>
@@ -279,15 +279,15 @@
 					<div class="section_blocks-flex investment_blocks-flex">
 
 						<div class="investment_block">
-							<div class="investmentCardsBlock_content" attr-data="block_one">
+							<div id="block_one" class="investmentCardsBlock_content">
 								<h4>Инвестиционный калькулятор</h4>
-								<img attr-data="img/strelka-white.svg" src="img/strelka-blue.svg" alt="arrow">
+								<img src="img/strelka-blue.svg" alt="img/strelka-white.svg">
 							</div>
 						</div>
 						<div class="investment_block">
-							<div class="investmentCardsBlock_content" attr-data="block_two">
+							<div id="block_two" class="investmentCardsBlock_content">
 								<h4>Распределение инвестиций</h4>
-								<img attr-data="img/strelka-white.svg" src="img/strelka-blue.svg" alt="arrow">
+								<img src="img/strelka-blue.svg" alt="img/strelka-white.svg">
 							</div>
 						</div>
 					</div>
@@ -411,7 +411,8 @@
 					<div class="col-12 instruction_steps">
 
 						<div class="instructionSteps_block">
-							<p class="instruction_step"><img src="img/plus-size.svg" attr-data="img/minus-size.svg" alt="icon">Создать крипто-кошелек</p>
+							<p class="instruction_step">
+								<img src="img/plus-size.svg" alt="img/minus-size.svg">Создать крипто-кошелек</p>
 							<div class="instructionSteps_block-hide">
 								<div class="instructionStepsBlock_content">
 									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
@@ -484,7 +485,7 @@
 									<p>Сильные стороны</p>
 									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
 								</div>
-								<img src="img/swot 1.svg" alt="swot">
+								<img src="img/swot1.svg" alt="swot">
 							</div>
 						</div>
 
@@ -494,7 +495,7 @@
 									<p>Слабые стороны</p>
 									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
 								</div>
-								<img src="img/swot 2.svg" alt="swot">
+								<img src="img/swot2.svg" alt="swot">
 							</div>
 						</div>
 
@@ -504,7 +505,7 @@
 									<p>Возмоности</p>
 									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
 								</div>
-								<img src="img/swot 3.svg" alt="swot">
+								<img src="img/swot3.svg" alt="swot">
 							</div>
 						</div>
 
@@ -514,7 +515,7 @@
 									<p>Угрозы</p>
 									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
 								</div>
-								<img src="img/swot 4.svg" alt="swot">
+								<img src="img/swot4.svg" alt="swot">
 							</div>
 						</div>
 
@@ -533,10 +534,10 @@
 					<div class="command_block commandBlock_menu first_block-margin">
 						<h2>Команда</h2>
 						<ul class="command_position">
-							<li><p class="commandPosition_item" attr-data="control">Управление</p></li>
-							<li><p class="commandPosition_item" attr-data="development">Разработка</p></li>
-							<li><p class="commandPosition_item" attr-data="marketing">Маркетинг</p></li>
-							<li><p class="commandPosition_item" attr-data="advisers">Советчики</p></li>
+							<li><p id="control" class="commandPosition_item">Управление</p></li>
+							<li><p id="development" class="commandPosition_item">Разработка</p></li>
+							<li><p id="marketing" class="commandPosition_item">Маркетинг</p></li>
+							<li><p id="advisers" class="commandPosition_item">Советчики</p></li>
 						</ul>
 					</div>
 
@@ -749,13 +750,13 @@
 
 					<div class="footer_logos">
 						<div class="footerLogo_one">
-							<a href="#"><img src="img/partner1.svg" attr-data="img/partner1_color.svg" alt="partner"></a>
-							<a href="#"><img src="img/partner2.svg" attr-data="img/partner2_color.svg" alt="partner"></a>
-							<a href="#"><img src="img/partner3.svg" attr-data="img/partner3_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner1.svg" alt="img/partner1_color.svg"></a>
+							<a href="#"><img src="img/partner2.svg" alt="img/partner2_color.svg"></a>
+							<a href="#"><img src="img/partner3.svg" alt="img/partner3_color.svg"></a>
 						</div>
 						<div class="footerLogo_two">
-							<a href="#"><img src="img/partner4.svg" attr-data="img/partner4_color.svg" alt="partner"></a>
-							<a href="#"><img src="img/partner5.svg" attr-data="img/partner5_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner4.svg" alt="img/partner4_color.svg"></a>
+							<a href="#"><img src="img/partner5.svg" alt="img/partner5_color.svg"></a>
 						</div>
 					</div>
 				</div>
